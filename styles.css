@@ -1,0 +1,215 @@
+/* 全局样式 */
+:root {
+    --primary-color: #6a1b9a;
+    --secondary-color: #9c27b0;
+    --accent-color: #e1bee7;
+    --dark-color: #4a148c;
+    --light-color: #f3e5f5;
+}
+
+body {
+    font-family: 'Roboto', 'Noto Sans SC', sans-serif;
+    padding-top: 76px;
+    background-color: var(--light-color);
+}
+
+/* 导航栏样式 */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.navbar-subtitle {
+    font-size: 0.9rem;
+    color: var(--secondary-color) !important;
+    margin-left: 10px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* 轮播图样式 */
+.carousel-item {
+    height: 100vh;
+    background-color: #000;
+}
+
+.carousel-item img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.carousel-caption {
+    background: rgba(106, 27, 154, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    bottom: 15%;
+    max-width: 800px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(5px);
+}
+
+.carousel-caption h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* 轮播图控制按钮样式 */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(106, 27, 154, 0.5);
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.carousel-indicators {
+    bottom: 30px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: var(--primary-color);
+    opacity: 0.7;
+}
+
+.carousel-indicators button.active {
+    background-color: white;
+}
+
+/* 课程卡片样式 */
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(106, 27, 154, 0.1);
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(106, 27, 154, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* 按钮样式 */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* 徽章样式 */
+.badge.bg-success {
+    background-color: var(--secondary-color) !important;
+}
+
+.badge.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* 页脚样式 */
+footer {
+    background: linear-gradient(135deg, var(--dark-color), var(--primary-color)) !important;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color) !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .carousel-caption {
+        bottom: 10%;
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+/* 动画效果 */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 

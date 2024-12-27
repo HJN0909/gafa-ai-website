@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI教育 - 开启智能学习之旅</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入 Font Awesome 图标 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- 引入自定义样式 -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-robot"></i> 智能生成实验室
+                <span class="navbar-subtitle">GAFA AI</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">课程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">联系我们</a>
+                    </li>
+                </ul>
+                <form class="d-flex me-3">
+                    <input class="form-control me-2" type="search" placeholder="搜索课程...">
+                    <button class="btn btn-outline-primary" type="submit">搜索</button>
+                </form>
+                <div class="d-flex">
+                    <button class="btn btn-outline-primary me-2">登录</button>
+                    <button class="btn btn-primary">注册</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图部分 -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/GAFA AI公众号封面-15.png" class="d-block w-100" alt="GAFA AI">
+                <div class="carousel-caption">
+                    <h2>探索生成式AI的无限可能</h2>
+                    <p>从基础到进阶，GAFA AI帮你开启AI学习之旅</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/DSC09297.JPG" class="d-block w-100" alt="工作坊实践">
+                <div class="carousel-caption">
+                    <h2>实践驱动学习</h2>
+                    <p>通过实际项目掌握AI技能</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/null10.jpg" class="d-block w-100" alt="艺术AI创作">
+                <div class="carousel-caption">
+                    <h2>艺术+编程</h2>
+                    <p>创造艺术类的AI应用</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- 课程展示区域 -->
+    <section id="courses" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">精品课程</h2>
+            <div class="row g-4">
+                <!-- 课程卡片 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/640.webp" class="card-img-top" alt="AI基础课程">
+                        <div class="card-body">
+                            <h5 class="card-title">AI基础入门</h5>
+                            <p class="card-text">了解AI的基本概念和应用场景，为进阶学习打下基础。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">免费</span>
+                                <button class="btn btn-primary">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/642.png" class="card-img-top" alt="TouchDesigner课程">
+                        <div class="card-body">
+                            <h5 class="card-title">TouchDesigner</h5>
+                            <p class="card-text">深入学习YD原理，掌握AI+交互的应用。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">￥99</span>
+                                <button class="btn btn-primary">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/641.png" class="card-img-top" alt="计算机视觉课程">
+                        <div class="card-body">
+                            <h5 class="card-title">计算机视觉专项</h5>
+                            <p class="card-text">计算机视觉理论与实践，从图像处理到目标检测。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">￥199</span>
+                                <button class="btn btn-primary">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多课程卡片 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>关于我们</h5>
+                    <p>你好，这里是GAFA AI很高兴与大家见面我们是广州美术学院AI生成与创作实验室倡导科技链接设计与艺术在这个强调跨界与创新的时代GAFA AI将与大家一起突破专业壁垒以实验精神大胆拥抱变化与未来。</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>联系方式</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> contact@aiedu.com</li>
+                        <li><i class="fas fa-phone me-2"></i> 400-123-4567</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 广东省广州市广州美术学院</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>关注我们</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2024 AI教育. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS 和依赖 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 自定义 JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 
